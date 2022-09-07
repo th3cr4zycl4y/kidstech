@@ -3,7 +3,7 @@ import AboutImg from "../../Assets/Images/teacher.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="container py-20 mx-auto h-[100vh]">
+    <section id="about" className="container py-20 mx-auto h-[100%]">
       <div className="flex flex-col items-center justify-center lg:flex-row">
         <div className="w-full px-4 mx-auto about-txt lg:w-[50%]">
           <h2
