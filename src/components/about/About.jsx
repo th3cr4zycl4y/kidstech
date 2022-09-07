@@ -3,7 +3,7 @@ import AboutImg from "../../Assets/Images/teacher.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="container pb-20 mx-auto">
+    <section id="about" className="container py-20 mx-auto h-[100vh]">
       <div className="flex flex-col items-center justify-center lg:flex-row">
         <div className="w-full px-4 mx-auto about-txt lg:w-[50%]">
           <h2
@@ -40,8 +40,12 @@ const About = () => {
             we have impacted the lives and learning process of their ward.
           </p>
         </div>
-        <div className="p-4 lg:w-[50%]" data-aos="fade-up">
-          <img src={AboutImg} alt="" />
+        <div className="p-4 lg:w-[50%] h-[30rem]" data-aos="fade-up">
+          <img
+            src={AboutImg}
+            alt="about img"
+            className="w-full h-full rounded-xl shadow-xl"
+          />
         </div>
       </div>
     </section>
