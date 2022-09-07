@@ -1,13 +1,36 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+header a {
+  @apply hover:bg-[#FF786F] hover:text-white hover:px-5   py-3 hover:rounded-md hover:shadow-sm lg:m-0 text-[#6B00ED] px-5;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn {
+  @apply m-2 p-2  w-32 text-[#3b008b] font-bold   rounded-xl hover:bg-[#FF736C] hover:text-white hover:border-[#FF736C] shadow-md hover:shadow-xl;
+}
+.about-txt p {
+  @apply text-[#3b008b] my-4;
+}
+
+.info div {
+  @apply flex items-center;
+}
+
+.info div p {
+  @apply ml-4 text-[#3B008B] font-bold;
+}
+
+.icon {
+  @apply text-[#3B008B] text-2xl;
+}
+form .form {
+  @apply rounded-xl  border-[#3B008B] border-2 my-2 p-3 w-full  focus:border-[#FF786F];
+}
+
+form label {
+  @apply text-left text-[#3B008B] text-xl;
 }

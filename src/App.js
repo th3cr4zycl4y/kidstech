@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import Footer from "./Layouts/Footer";
+import Header from "./Layouts/Header";
+import Main from "./Layouts/Main";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-function App() {
+const App = () => {
+  const listenToScroll = () => {
+    let heightToHideFrom = 400;
+    const winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+
+    if (winScroll > heightToHideFrom) {
+      isVisible && setIsVisible(false);
+    } else {
+      setIsVisible(true);
+    }
+  };
+  useEffect(() => {
+    AOS.init({});
+    AOS.refresh();
+    window.addEventListener("scroll", listenToScroll);
+    return () => window.removeEventListener("scroll", listenToScroll);
+  }, [listenToScroll]);
+
+  const [toggle, setToggle] = useState(true);
+  const [isVisible, setIsVisible] = useState(true);
+
+  const NavToggle = () => {
+    setToggle((toggle) => !toggle);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header NavToggle={NavToggle} toggle={toggle} />
+      <Main isVisible={isVisible} />
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;

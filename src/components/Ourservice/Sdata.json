@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Technology",
+    "icon": "Images/programmer.png",
+    "text": "Coding for kids refers to the collection of opportunities available for children to get involved in coding. While it might be difficult to imagine a young mind learning something so seemingly complex, it is definitely an attainable reality. "
+  },
+  {
+    "title": "Artificial Intelligence",
+    "icon": "Images/ai.png",
+    "text": "Designing a robot to solve problems in our environment involves the innovative and creative application of classroom learning in subjects like mathematics, ICT, design and technology, science, engineering, physics, computer programming, civics studies etc."
+  },
+  {
+    "title": "Games Intelligence",
+    "icon": "Images/queen.png",
+    "text": "Coding for kids refers to the collection of opportunities available for children to get involved in coding. While it might be difficult to imagine a young mind learning something so seemingly complex, it is definitely an attainable reality."
+  },
+  {
+    "title": "Music",
+    "icon": "Images/musical-note.png",
+    "text": "Music is a form of act that uses sound organised in time. Music is also a form of entertainment that puts sounds together in a way that people like, find interesting or dance to. Most music includes people singing with their voicees or playing musical instruments."
+  },
+  {
+    "title": "International Examinations",
+    "icon": "Images/exam.png",
+    "text": "Foriegn language tutoring and international exam coaching, The study of foreign languages enhances listening skills and memory, increases analytical abilities, and builds aptitude in problem solving and working with abstract concepts. It has been shown to enhance the study of other subjects. Abilities in math and English increase, and creativity grows."
+  }
+]
