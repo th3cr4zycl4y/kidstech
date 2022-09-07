@@ -6,6 +6,20 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const App = () => {
+  useEffect(() => {
+    AOS.init({});
+    AOS.refresh();
+    window.addEventListener("scroll", listenToScroll);
+    return () => window.removeEventListener("scroll", listenToScroll);
+  });
+
+  const [toggle, setToggle] = useState(true);
+  const [isVisible, setIsVisible] = useState(true);
+
+  const NavToggle = () => {
+    setToggle((toggle) => !toggle);
+  };
+
   const listenToScroll = () => {
     let heightToHideFrom = 400;
     const winScroll =
@@ -17,20 +31,6 @@ const App = () => {
       setIsVisible(true);
     }
   };
-  useEffect(() => {
-    AOS.init({});
-    AOS.refresh();
-    window.addEventListener("scroll", listenToScroll);
-    return () => window.removeEventListener("scroll", listenToScroll);
-  }, [listenToScroll]);
-
-  const [toggle, setToggle] = useState(true);
-  const [isVisible, setIsVisible] = useState(true);
-
-  const NavToggle = () => {
-    setToggle((toggle) => !toggle);
-  };
-
   return (
     <>
       <Header NavToggle={NavToggle} toggle={toggle} />
