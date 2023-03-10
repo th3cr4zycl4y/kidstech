@@ -14,9 +14,7 @@ const Footercon = () => {
                 className="w-[5rem] h-[5rem]"
                 alt="KidsTech logo"
               />
-              <h1 className="pl-5 text-4xl font-bold md:text-5xl">
-                KidsTech Global
-              </h1>
+              <h1 className="pl-5 text-4xl font-bold">KidsTech Global</h1>
             </div>
 
             <p>
