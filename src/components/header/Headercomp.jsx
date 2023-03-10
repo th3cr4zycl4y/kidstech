@@ -22,7 +22,7 @@ const Headercomp = ({ NavToggle, toggle }) => {
             : "block w-full lg:w-[35rem] lg:h-[8rem]  h-[50vh] text-center lg:text-left absolute lg:static top-[5rem] container mx-auto lg:m-0"
         }
       >
-        <ul className="flex flex-col items-center justify-center h-full mx-auto space-y-5 text-2xl shadow-xl lg:shadow-none lg:space-y-0 lg:text-xl lg:flex-row lg:justify-around bg-white ">
+        <ul className="flex flex-col items-center justify-center h-full mx-auto space-y-5 text-2xl bg-white shadow-xl lg:shadow-none lg:space-y-0 lg:text-xl lg:flex-row lg:justify-around ">
           <li>
             <a onClick={NavToggle} href="#Home">
               Home
@@ -52,7 +52,7 @@ const Headercomp = ({ NavToggle, toggle }) => {
         </ul>
       </nav>
       <div
-        className="pr-2 text-3xl text-[#3B008B] lg:hidden"
+        className="pr-2 text-3xl text-[#3B008B] lg:hidden cursor-pointer"
         onClick={NavToggle}
       >
         {toggle ? <FaBars /> : <FaTimes />}

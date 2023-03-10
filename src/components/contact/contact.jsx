@@ -4,20 +4,14 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
-    <section id="contact" className="container mx-auto h-full ">
+    <section id="contact" className="container h-full mx-auto ">
       <div className="lg:flex">
         <div className=" mx-4 lg:w-[50%]">
           <h3 className="text-3xl font-extrabold text-[#3B008B] py-5">
             GET IN TOUCH
           </h3>
-          <p className="mb-10 text-[#3B008B]">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem
-            consequuntur alias deserunt odit natus earum mollitia cupiditate
-            illum corrupti assumenda, tempora molestiae hic laborum quidem eius
-            quaerat quos. Est laboriosam voluptas at doloremque porro soluta
-            quibusdam dolores totam aut sequi.
-          </p>
-          <div className="info space-y-10 ">
+
+          <div className="space-y-10 info ">
             <div>
               <FaEnvelope className="icon" />
               <p>Example@example.com</p>
