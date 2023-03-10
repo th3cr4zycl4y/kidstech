@@ -7,14 +7,16 @@ const Contact = () => {
     <section id="contact" className="container h-full mx-auto ">
       <div className="lg:flex">
         <div className=" mx-4 lg:w-[50%]">
-          <h3 className="text-3xl font-extrabold text-[#3B008B] py-5">
+          <h3 className="text-3xl font-extrabold tracking-widest text-[#3B008B] py-10">
             GET IN TOUCH
           </h3>
 
           <div className="space-y-10 info ">
             <div>
               <FaEnvelope className="icon" />
-              <p>Example@example.com</p>
+              <a href="mailto:adese.adeniran2012@gmail.com">
+                adese.adeniran2012@gmail.com
+              </a>
             </div>
             <div>
               <FaPhoneAlt className="icon" />
@@ -24,7 +26,7 @@ const Contact = () => {
             </div>
             <div>
               <FaMapMarkerAlt className="icon" />
-              <p>No 13 olowoira road beside WestGate SuperMarkert </p>
+              <p>No 13 olowora road beside WestGate SuperMarket </p>
             </div>
           </div>
         </div>

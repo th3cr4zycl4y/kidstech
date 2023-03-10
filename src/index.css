@@ -10,8 +10,17 @@ header a {
 }
 
 .btn {
-  @apply m-2 p-2  w-32 text-[#3b008b] font-bold   rounded-xl hover:bg-[#FF736C] hover:text-white hover:border-[#FF736C] shadow-md hover:shadow-xl;
+  @apply m-2 p-2  w-32 text-[#3b008b] font-bold   rounded-xl hover:bg-[#FF736C] hover:text-white hover:border-[#FF736C] shadow-md hover:shadow-xl border border-[#FF736C];
 }
+
+.btn a {
+  @apply p-0 m-0;
+}
+
+.btn:hover a {
+  color: white;
+}
+
 .about-txt p {
   @apply text-[#3b008b] my-4;
 }
@@ -20,7 +29,8 @@ header a {
   @apply flex items-center;
 }
 
-.info div p {
+.info div > p,
+a {
   @apply ml-4 text-[#3B008B] font-bold;
 }
 

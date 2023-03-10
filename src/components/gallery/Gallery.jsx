@@ -46,7 +46,7 @@ const Gallery = () => {
   };
   return (
     <section className="container mx-auto " id="gallery">
-      <h2 className="text-3xl font-extrabold text-center lg:text-4xl text-[#3B008B]  ">
+      <h2 className="text-3xl tracking-widest font-extrabold text-center lg:text-4xl text-[#3B008B]  ">
         Gallery
       </h2>
       <div className="h-[30rem] w-[full] flex flex-col item-center justify-center">

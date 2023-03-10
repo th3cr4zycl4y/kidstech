@@ -7,8 +7,8 @@ const Footercon = () => {
     <div className=" mx-auto flex lg:py-32 py-10 w-[90%] items-center justify-center">
       <div className="space-y-10 text-center text-white">
         <div className="flex flex-col items-center justify-center space-y-10 lg:space-x-10 lg:flex-row lg:w-full">
-          <div className="space-y-4">
-            <div className="flex items-end justify-center  lg:w-[40%]">
+          <div className="space-y-4 flex flex-col justify-center items-center">
+            <div className="flex items-end justify-center  lg:w-[50%]">
               <img
                 src={logo}
                 className="w-[5rem] h-[5rem]"
@@ -35,22 +35,32 @@ const Footercon = () => {
           </div>
         </div>
         <div className="flex justify-center mt-10 align-center">
-          <ul className="flex flex-col items-center justify-center h-full mx-auto space-y-5 text-2xl font-bold text-center text-white lg:flex-row lg:space-y-0 lg:space-x-10">
+          <ul className="flex flex-col items-center justify-center h-full mx-auto space-y-5 text-2xl font-bold text-center  lg:flex-row lg:space-y-0 lg:space-x-10">
             <li>
-              <a href="#Home">Home</a>
+              <a href="#Home" className="text-white">
+                Home
+              </a>
             </li>
             <li>
-              <a href="#ourservice">Our Service</a>
+              <a href="#ourservice" className="text-white">
+                Our Service
+              </a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="#about" className="text-white">
+                About
+              </a>
             </li>
             <li>
-              <a href="#gallery">Gallery</a>
+              <a href="#gallery" className="text-white">
+                Gallery
+              </a>
             </li>
 
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact" className="text-white">
+                Contact
+              </a>
             </li>
           </ul>
         </div>

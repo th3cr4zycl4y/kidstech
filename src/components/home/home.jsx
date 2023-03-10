@@ -11,12 +11,14 @@ const Home = () => {
         <h1 className="text-4xl text-[#3B008B] font-bold  lg:font-extrabold pb-6 lg:text-6xl text-">
           Prefecting Your Passion To Achieve Your Dreams
         </h1>
-        <p className="font-slim text-[#3B008B] mb-6">
+        <p className="font-bold text-[#3B008B] mb-6">
           Kidstech Global is a contemporary organization using modern tools and
           technics to influence the general world positively relying on
           effectiveness and efficiency in teaching methodology.
         </p>
-        <button className=" btn">Learn More</button>
+        <button className="btn">
+          <a href="#about">Learn More</a>
+        </button>
       </div>
       <div className="flex justify-center align-center">
         <img src={robotimg} alt="Robot" />
