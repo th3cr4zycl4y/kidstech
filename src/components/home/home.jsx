@@ -9,7 +9,7 @@ const Home = () => {
     >
       <div className="lg:w-[50vw] flex flex-col justify-center items-center m-2">
         <h1 className="text-4xl text-[#3B008B] font-bold  lg:font-extrabold pb-6 lg:text-6xl text-">
-          Prefecting Your Passion To Achieve Your Dreams
+          Perfecting Your Passion To Achieve Your Dreams
         </h1>
         <p className="font-bold text-[#3B008B] mb-6">
           Kidstech Global is a contemporary organization using modern tools and

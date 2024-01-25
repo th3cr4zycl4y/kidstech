@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
-  const [sucess, setsucess] = useState(false);
+  const [success, setsuccess] = useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -20,7 +20,7 @@ const ContactForm = () => {
           console.log(result.text);
           e.target.reset();
           if (result.status === 200) {
-            setsucess((sucess) => !sucess);
+            setsuccess((success) => !success);
           }
         },
         (error) => {
@@ -70,8 +70,8 @@ const ContactForm = () => {
         <button className=" w-full  hover:bg-white mt-5 p-4 font-bold rounded-xl shadow-md hover:shadow-xl  text-white bg-[#FF786F] hover:text-[#3B008B] border-[#3B008B] hover:border ">
           SUBMIT
         </button>
-        {sucess && (
-          <p className="text-green-500 my-5">Message Successfull sent</p>
+        {success && (
+          <p className="text-green-500 my-5">Message Successfully sent</p>
         )}
       </form>
     </div>

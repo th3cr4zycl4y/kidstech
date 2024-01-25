@@ -14,8 +14,8 @@ const Contact = () => {
           <div className="space-y-10 info ">
             <div>
               <FaEnvelope className="icon" />
-              <a href="mailto:tadese.adeniran2012@gmail.com">
-                tadese.adeniran2012@gmail.com
+              <a href="mailto:kidstechglobal@gmail.com">
+                kidstechglobal@gmail.com
               </a>
             </div>
             <div>
